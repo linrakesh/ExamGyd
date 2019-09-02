@@ -28,7 +28,6 @@ a {
 .container,
 .container-normal {
   width: 100%;
-  max-width: 1300px;
   margin: 0 auto;
 }
 .container {
@@ -47,6 +46,7 @@ a {
 }
 .logo h1 {
   margin: 0;
+  margin-left: 10px;
 }
 .others {
   flex-basis: 75%;
@@ -75,7 +75,7 @@ a {
 }
 
 .left-sidebar {
-  flex-basis: 18%;
+  flex-basis: 22%;
   padding: 10px;
 }
 .main-content {
@@ -93,15 +93,28 @@ a {
   margin-bottom: 10px;
 }
 .article-summery a {
-  color: Red;
+  color: teal;
 }
 .article-summery h3 {
   margin: 0;
 }
 
-#sidebar .widget {
-  background: #e7e7e7;
-  margin-bottom: 10px;
+.tags ul{list-style-type: none; display:inline-block;margin:0;margin-left:-45px;margin-bottom:-20px;}
+.tags ul li {float:left;padding:4px;}
+.tags a{background:teal;color:#fff;padding:4px 20px;border-radius:15px;box-shadow:1px 1px 1px rgb(197, 187, 187); }
+
+/*-----------------left hand side widget-------------------*/
+
+.left-widget ul{margin-left:-40px;list-style-type:none;}
+.left-widget ul li{margin-bottom:5px;background:#fff;border-left:4px solid teal;}
+.left-widget a{color:#444;display:block;padding:10px;}
+.left-widget a:hover{background:teal;color:#fff; }
+/*----------------right hand side widget------------------*/
+.widget {
+  background: #fff;
+  margin-bottom: 40px;
+  margin-top:-30px;
+  box-shadow: 0px 0px 16px rgb(200, 200, 200);
 }
 
 .widget ul {
@@ -109,11 +122,19 @@ a {
   list-style-type: none;
 }
 .widget ul li {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgb(233, 232, 232);
 }
+.widget ul li:last-child{border-bottom:none;}
+.widget p{padding:10px 20px;}
+.widget h3{background:red;text-align: center;color:#fff;padding:3px 0; }
 .widget a {
   color: #444;
+   display:block;
+   padding:4px 10px ;
 }
+.widget a:hover{background:teal;color:#fff;transition: all 0.5s ease;}
+
+/*------------------footer widget------------------*/
 
 #footer {
   background: #999;

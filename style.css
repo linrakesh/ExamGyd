@@ -1,0 +1,123 @@
+body {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.orange {
+  background: orange;
+}
+.teal {
+  background: teal;
+}
+.gray {
+  background: #e7e7e7;
+}
+.gray-dark {
+  background: #d6d6d6;
+}
+.white {
+  background: #fff;
+  color: #444;
+}
+.container,
+.container-normal {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#header {
+  height: 60px;
+  background: #fff;
+}
+.logo {
+  flex-basis: 25%;
+  line-height: 60px;
+}
+.logo h1 {
+  margin: 0;
+}
+.others {
+  flex-basis: 75%;
+}
+
+#menu {
+  background: teal;
+  margin-bottom: 20px;
+}
+#menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#menu ul li {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 40px;
+}
+#menu a {
+  color: white;
+  line-height: 40px;
+}
+#menu a:hover {
+  background: red;
+}
+
+.left-sidebar {
+  flex-basis: 18%;
+  padding: 10px;
+}
+.main-content {
+  flex-basis: 50%;
+  padding: 10px 20;
+}
+.right-sidebar {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.article-summery {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.article-summery a {
+  color: Red;
+}
+.article-summery h3 {
+  margin: 0;
+}
+
+#sidebar .widget {
+  background: #e7e7e7;
+  margin-bottom: 10px;
+}
+
+.widget ul {
+  padding: 0;
+  list-style-type: none;
+}
+.widget ul li {
+  border-bottom: 1px solid red;
+}
+.widget a {
+  color: #444;
+}
+
+#footer {
+  background: #999;
+  color: #444;
+  margin-top: 40px;
+  padding: 20px 0;
+}

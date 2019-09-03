@@ -11,18 +11,18 @@ a {
   color: #fff;
 }
 
-ol {
+/* ol {
   list-style: none;
-  counter-reset: my-awesome-counter;
+  counter-reset: counter;
 }
 ol li {
-  counter-increment: my-awesome-counter;
+  counter-increment:counter;
 }
 ol li::before {
-  content: counter(my-awesome-counter) ". ";
+  content: counter(counter) ". ";
   color: red;
-  font-weight: bold;
-}
+  font-weight: 700;
+} */
 
 .orange {
   background: orange;
@@ -70,7 +70,7 @@ ol li::before {
 }
 
 #menu {
-  background: teal;
+  background:#26a65b;
   margin-bottom: 20px;
 }
 #menu ul {
@@ -86,9 +86,7 @@ ol li::before {
   color: white;
   padding: 8px 10px 7px;
 }
-#menu ul li a:hover {
-  background: red;
-}
+
 
 .left-sidebar {
   flex-basis: 22%;
@@ -128,7 +126,7 @@ ol li::before {
   padding: 4px;
 }
 .tags a {
-  background: teal;
+  background:#26a65b;
   color: #fff;
   padding: 4px 20px;
   border-radius: 15px;
@@ -153,11 +151,11 @@ ol li::before {
 }
 .article ul,
 .article ol {
-  padding: 0px 10px 0 15px;
+  padding: 0px 10px 0 20px;
 }
 .article ul li,
 .article ol li {
-  padding: 5px 0px;
+  padding: 5px 0px 0 15px;
 }
 
 .article .tags a {
@@ -218,7 +216,7 @@ ol li::before {
   padding: 4px 10px;
 }
 .widget a:hover {
-  background: teal;
+  background:#26a65b;
   color: #fff;
   transition: all 0.5s ease;
 }

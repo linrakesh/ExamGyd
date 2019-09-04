@@ -1,3 +1,19 @@
+/*
+Theme Name: ExamGyd
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -14,44 +30,39 @@ a {
   color: #fff;
 }
 
-/* ol {
-  list-style: none;
-  counter-reset: counter;
+img {
+  height: auto;
+  /* Make sure
+   are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+  vertical-align: middle;
 }
-ol li {
-  counter-increment:counter;
-}
-ol li::before {
-  content: counter(counter) ". ";
-  color: red;
-  font-weight: 700;
-} */
 pre {
-	background: #d1d1d1;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.3125;
-	margin: 1.75em 0 1.75em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 10px;
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
+  background: #d1d1d1;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.3125;
+  margin: 1.75em 0 1.75em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 10px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 table {
-  
-   border-collapse: collapse;
-   table-layout: fixed;
-   width: 100%;
-   margin: 10px 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 10px 0;
 }
 tr,
 th,
 td {
   padding: 5px;
-  border: 1px solid #e0e0e0; */
-  text-align: left;
+  border: 1px solid #e0e0e0;
+  */text-align: left;
 }
 th {
   background: #26a65b;
@@ -98,7 +109,13 @@ tr:nth-child(odd) {
   height: auto;
 }
 
-
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: all 1s ease-out;
+}
 /*------------container and others----------*/
 .container,
 .container-normal {
@@ -117,16 +134,67 @@ tr:nth-child(odd) {
   height: 60px;
   background: #fff;
 }
+#header a {
+  color: #26a65b;
+}
 .logo {
   flex-basis: 25%;
   line-height: 60px;
+}
+.logo a {
+  color: #26a65b;
 }
 .logo h1 {
   margin: 0;
   margin-left: 10px;
 }
-.others {
-  flex-basis: 75%;
+.write-for-us {
+  flex-basis: 25%;
+}
+
+.write-for-us ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+  list-style-type: none;
+  line-height: 60px;
+}
+.write-for-us ul li {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.write-for-us ul li a {
+  padding: 5px 10px;
+}
+
+.search-form {
+  flex-basis: 50%;
+  line-height: 60px;
+}
+.search-field {
+  width: 80%;
+}
+.search-submit {
+  margin-left: -3px;
+}
+.search-icon {
+  float: right;
+  margin-top: -30px;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*----customize search screen -------------*/
+.screen-reader-text {
+  display: none;
+}
+input {
+  padding: 5px 10px;
+}
+input[type="submit"] {
+  width: 60px;
 }
 
 #menu {
@@ -177,8 +245,8 @@ tr:nth-child(odd) {
   list-style-type: none;
   display: inline-block;
   margin: 0;
-  margin-left: -45px;
-  margin-bottom: -20px;
+  margin-left: -42px;
+  margin-bottom: -12px;
 }
 .tags ul li {
   float: left;
@@ -222,7 +290,9 @@ tr:nth-child(odd) {
 .article ol li {
   padding: 5px 0px 0 15px;
 }
-
+.article img {
+  max-width: 100%;
+}
 .article .tags a {
   color: #fff;
   margin-left: 10px;
@@ -230,7 +300,9 @@ tr:nth-child(odd) {
 .related-article {
   margin-top: 30px;
 }
-.article .table{overflow-x:scroll; }
+.article .table {
+  overflow-x: scroll;
+}
 /*-----------------left hand side widget-------------------*/
 
 .left-widget ul {
@@ -289,6 +361,8 @@ tr:nth-child(odd) {
   color: #fff;
   transition: all 0.5s ease;
 }
+
+/*--------------responsive images----------------------*/
 
 /*------------------footer widget------------------*/
 
@@ -363,6 +437,10 @@ tr:nth-child(odd) {
   background: #26a65b;
   color: #fff;
 }
+span.page-numbers.current {
+  padding: 5px 5px;
+  background: orange;
+}
 
 @media screen and (max-width: 800px) {
   .container {
@@ -370,16 +448,15 @@ tr:nth-child(odd) {
   }
   .main-content {
     order: 1;
-    flex-basis:100%;
+    flex-basis: 100%;
   }
   .left-sidebar {
     order: 2;
-    flex-basis:100%;
-    
+    flex-basis: 100%;
   }
   .right-sidebar {
     order: 3;
-    flex-basis:100%;
+    flex-basis: 100%;
   }
   .footer-widget-1 {
     flex-basis: 100%;
@@ -389,5 +466,13 @@ tr:nth-child(odd) {
     flex-basis: 50%;
     padding: 30px;
   }
-  
+
+  .logo {
+    flex-basis: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .write-for-us {
+    display: none;
+  }
 }

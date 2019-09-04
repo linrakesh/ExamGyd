@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  />
     <title>Document</title>
   </head>
   <body class="gray">
@@ -20,9 +18,9 @@
           <h1>ExamGyd.com</h1>
         </div>
         <div class="others">
-          <form action="">
+          <form class="searchform" action="">
             <input type="text" />
-            <button>Submit Query</button>
+            <button type="submit" value="submit">Search</button>
           </form>
         </div>
       </div>
@@ -231,5 +229,18 @@
         </p>
       </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      jQuery(function($) {
+        var nav = $("#menu");
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 70) {
+            nav.addClass("fixed");
+          } else {
+            nav.removeClass("fixed");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

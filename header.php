@@ -18,9 +18,6 @@
         <div class="write-for-us">
             <?php wp_nav_menu( array('theme_location' => 'logo')); ?>
         </div>
-        <!-- <div class="search-icon">
-            <i class="fa fa-search"></i>
-        </div> -->
       </div>
 
     </header>

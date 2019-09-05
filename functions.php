@@ -9,9 +9,9 @@ function examgyd_style(){
 	wp_enqueue_style( 'roboto','https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 	wp_enqueue_style( 'stylesheet',get_stylesheet_uri());
 	wp_enqueue_style( 'fontawesome','//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-	wp_enqueue_style( 'menu', get_template_directory_uri() . '/css/stellarnav.min.css');
-	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/stellarnav.min.js');
+	//wp_enqueue_style( 'menu', get_template_directory_uri() . '/css/menu.css');
+	//wp_enqueue_script('jquery');
+	//wp_enqueue_script( 'script', get_template_directory_uri() . '/js/menu.js', array ( 'jquery' ),1.1, true);
   //
  //   wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ),1.1, true);
   //  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
